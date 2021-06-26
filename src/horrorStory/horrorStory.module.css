@@ -1,11 +1,24 @@
-/* Custom CSS*/
+@font-face {
+    font-family: "title font";
+    src: url("./static/font/Blood\ Thirst.ttf");
+}
+
+@font-face {
+    font-family: "button font";
+    src: url("./static/font/DancingScript-Regular.ttf");
+}
+
+@font-face {
+    font-family: "contents font";
+    src: url("./static/font/cafe.ttf");
+}
 
 .page{
-    position: relative;
+    position: absolute;
     z-index: 1;
     width:100%;
     height:100%;
-    background: url('./hand.jpg');
+    background: url('./static/image/hand.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -13,7 +26,7 @@
 .page::after {
     position: absolute;
     z-index: -1;
-    background: url("./hand.jpg");
+    background: url("./static/image/hand.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -32,23 +45,10 @@
 
 .title{
     text-align: center;
-    font-size: 2rem;
+    font-size: 5rem;
     padding: 1rem;
-    color:#df2a1d;
-    font-family: DancingScript;
-}
-
-.contents{
-
-
-}
-
-.story{
- 
-}
-
-.eachStory{
-    
+    color:#a7241a;
+    font-family: 'title font';
 }
 
 .textPart{
@@ -59,10 +59,13 @@
 
 
 .storyContent{
-    border: solid #000000;
-    color:#f5f3f3;
-    height: 26rem;
+    border: solid #000000 ;
+    border-style: double;
+    color:#ffffff;
     width: 40rem;
+    padding: 1rem;
+    font-family: 'contents font';
+    font-size: 1.3rem;
 }
 
 .btnPart{
@@ -72,7 +75,8 @@
 }
 
 button{
-    background:#df2a1d;
+    font-family: 'button font';
+    background:#e62c1f;
     color:rgb(0, 0, 0);
     border:none;
     position:relative;
@@ -110,7 +114,3 @@ button:hover:before,button:hover:after{
     transition:800ms ease all;
 }
 
-
-.showAnswer{
-    
-}
