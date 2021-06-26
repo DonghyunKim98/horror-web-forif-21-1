@@ -7,6 +7,14 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+@font-face {
+  font-family: 'DancingScript';
+  font-style: normal;
+  font-weight: 100;
+  src: url("./horrorStory/DancingScript-Regular.ttf") format('ttf'),
+
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
