@@ -1,0 +1,25 @@
+.sound {
+    width:225px;
+    height:400px;
+    background-color: gray;  
+    color : red;
+    font-family: 'Benne', serif;
+    font-size : xx-large;
+    border-radius: 7px;
+}
+
+.write {
+    width:225px;
+    height:400px;
+    background-color: gray;
+    color : red;
+    font-size : xx-large;
+    font-family: 'Benne', serif;
+    border-radius:7px;
+}
+
+
+.sound:hover, .write:hover{
+    background : url('./ghost1.jpeg');
+
+}
