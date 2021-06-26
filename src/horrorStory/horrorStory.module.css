@@ -1,13 +1,41 @@
+/* Custom CSS*/
+
+.page{
+    position: relative;
+    z-index: 1;
+    width:100%;
+    height:100%;
+    background: url('./hand.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.page::after {
+    position: absolute;
+    z-index: -1;
+    background: url("./hand.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    content: "";
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+}
 
 .horrorStory{
     display: flex;
     flex-direction: column;
+    
 }
 
 .title{
     text-align: center;
     font-size: 2rem;
     padding: 1rem;
+    color:#df2a1d;
+    font-family: DancingScript;
 }
 
 .contents{
@@ -29,12 +57,10 @@
     align-items: center;
 }
 
-.storyTitle{
-    text-align: center;
-}
 
 .storyContent{
-    border: solid black;
+    border: solid #000000;
+    color:#f5f3f3;
     height: 26rem;
     width: 40rem;
 }
@@ -45,13 +71,45 @@
     justify-content: center;
 }
 
-.true{
+button{
+    background:#df2a1d;
+    color:rgb(0, 0, 0);
+    border:none;
+    position:relative;
+    height:60px;
+    font-size:1.6em;
+    padding:0 2em;
+    cursor:pointer;
+    transition:800ms ease all;
+    outline:none;
     margin: 2rem;
+    border-radius: 2rem;
+  }
+button:hover{
+    background:rgb(0, 0, 0);
+    color:#df2a1d;
+}
+button:before,button:after{
+    content:'';
+    position:absolute;
+    top:0;
+    right:0;
+    height:2px;
+    width:0;
+    background:#df2a1d;
+    transition:400ms ease all;
+}
+button:after{
+    right:inherit;
+    top:inherit;
+    left:0;
+    bottom:0;
+}
+button:hover:before,button:hover:after{
+    width:100%;
+    transition:800ms ease all;
 }
 
-.false{
-    margin: 2rem;
-}
 
 .showAnswer{
     
