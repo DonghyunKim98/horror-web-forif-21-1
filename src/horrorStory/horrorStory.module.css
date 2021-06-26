@@ -35,29 +35,55 @@
     top: 0;
     left: 0;
     opacity: 0.5;
+
 }
 
-.horrorStory{
-    display: flex;
-    flex-direction: column;
-    
-}
-
-.title{
-    text-align: center;
-    font-size: 5rem;
-    padding: 1rem;
-    color:#a7241a;
-    font-family: 'title font';
-}
-
-.textPart{
-    display:flex;
-    flex-direction: column;
-    align-items: center;
+.horrorStory {
+  display: flex;
+  flex-direction: column;
 }
 
 
+.title {
+  text-align: center;
+  font-size: 2rem;
+  padding: 1rem;
+  color: #df2a1d;
+  font-family: DancingScript;
+}
+.textPart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.storyContent {
+  border: solid #000000;
+  color: #f5f3f3;
+  height: 26rem;
+  width: 40rem;
+}
+
+.btnPart {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+button {
+  background: #df2a1d;
+  color: rgb(0, 0, 0);
+  border: none;
+  position: relative;
+  height: 60px;
+  font-size: 1.6em;
+  padding: 0 2em;
+  cursor: pointer;
+  transition: 800ms ease all;
+  outline: none;
+  margin: 2rem;
+  border-radius: 2rem;
+}
 .storyContent{
     border: solid #000000 ;
     border-style: double;
@@ -92,25 +118,47 @@ button{
 button:hover{
     background:rgb(0, 0, 0);
     color:#df2a1d;
+button:hover {
+  background: rgb(0, 0, 0);
+  color: #df2a1d;
 }
-button:before,button:after{
-    content:'';
-    position:absolute;
-    top:0;
-    right:0;
-    height:2px;
-    width:0;
-    background:#df2a1d;
-    transition:400ms ease all;
+button:before,
+button:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 2px;
+  width: 0;
+  background: #df2a1d;
+  transition: 400ms ease all;
 }
-button:after{
-    right:inherit;
-    top:inherit;
-    left:0;
-    bottom:0;
+button:after {
+  right: inherit;
+  top: inherit;
+  left: 0;
+  bottom: 0;
 }
-button:hover:before,button:hover:after{
-    width:100%;
-    transition:800ms ease all;
+button:hover:before,
+button:hover:after {
+  width: 100%;
+  transition: 800ms ease all;
 }
 
+.wrongAnswerContents {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  font-size: 9rem;
+  width: 70%;
+  height: 70%;
+  color: red;
+}
+
+.wrongAnswerContents img {
+  width: 50%;
+  height: 50%;
+}
