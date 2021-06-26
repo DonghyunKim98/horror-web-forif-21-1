@@ -1,8 +1,19 @@
+.btn {
+    width : 500px;
+    height : 400px;
+    display : flex;
+    flex-direction: row;
+}
 .sound {
     width:225px;
-    height:400px;
+    height:280px;
+    margin: 60px 0px 0px 73px;
+    border : solid 2px black;
     background-color: gray;  
-    color : red;
+    background-image: url('./bloody-hand-print-4.png');
+    background-size : contain;
+    background-repeat: no-repeat;
+    color : black;
     font-family: 'Benne', serif;
     font-size : xx-large;
     border-radius: 7px;
@@ -10,9 +21,14 @@
 
 .write {
     width:225px;
-    height:400px;
+    height:280px;
+    margin: 60px 0px 0px 0px;
+    border : solid 2px black;
     background-color: gray;
-    color : red;
+    background-image: url('./bloody-hand-print-4.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    color : black;
     font-size : xx-large;
     font-family: 'Benne', serif;
     border-radius:7px;
@@ -21,5 +37,7 @@
 
 .sound:hover, .write:hover{
     background : url('./ghost1.jpeg');
-
+    background-color: black;
+    background-size: contain;
+    background-repeat: no-repeat;   
 }

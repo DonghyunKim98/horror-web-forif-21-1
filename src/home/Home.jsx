@@ -7,10 +7,12 @@ const Home = () => {
     <>
       <div className={styles.background} />
       <div className={styles.contents}>
-        <h1>Forif-21-1-Horror</h1>
+        <div>
+          <h1>Forif-21-1-Horror</h1>
+        </div>
         <h2>테마</h2>
         <Click />
-        <span>-react-</span>
+        <p>-react-</p>
       </div>
     </>
   );
