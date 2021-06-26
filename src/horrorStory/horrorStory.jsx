@@ -1,10 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import styles from "./horrorStory.module.css";
-import Story from "./story.jsx";
+import Story from "./Story.jsx";
 
 function horrorStory() {
-
-
   return (
     <>
       <div className={styles.page}>
@@ -15,7 +13,6 @@ function horrorStory() {
       </div>
     </>
   );
-
 }
 
 export default horrorStory;

@@ -4,29 +4,17 @@ import HorrorSound from "./horrorSound/HorrorSound";
 import HorrorStory from "./horrorStory/HorrorStory";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./App.css";
-import Home from "./home/Home";
 
-
-const App=()=>{
-  return(
-    <Home/>
 function App() {
   return (
     <Router>
       <Switch>
-        <Route exact path="/">
-          <Home />
-        </Route>
-        <Route exact path="/HorrorSound">
-          <HorrorSound />
-        </Route>
-        <Route exact path="HorrorStory">
-          <HorrorStory />
-        </Route>
+        <Route exact path="/" component={Home} />
+        <Route exact path="/HorrorSound" component={HorrorSound} />
+        <Route exact path="HorrorStory" component={HorrorStory} />
       </Switch>
     </Router>
   );
 }
-
 
 export default App;
