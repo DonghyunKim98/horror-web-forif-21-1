@@ -5,7 +5,7 @@ import styles from "./Click.module.css";
 const Click = () => {
   return (
     <>
-      <div>
+      <div className = "btn">
         <Link to="/HorrorSound">
           <button className={styles.sound}>소리</button>
         </Link>
