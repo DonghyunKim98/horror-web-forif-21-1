@@ -26,14 +26,14 @@ function HorrorStory() {
         <div className={styles.title}>Horror Story</div>
         <div className={styles.contents}>
           <Story className={styles.story}></Story>
+          <Timer time={timeValue} />
+          {!timeValue && (
+            <div className={styles.wrongAnswerContents}>
+              <img src={ghostImage} />
+              틀렸습니다!!!!!
+            </div>
+          )}
         </div>
-        <Timer time={timeValue} />
-        {!timeValue && (
-          <div className={styles.wrongAnswerContents}>
-            <img src={ghostImage} />
-            틀렸습니다!!!!!
-          </div>
-        )}
       </div>
     </>
   );
