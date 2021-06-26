@@ -15,6 +15,7 @@ function horrorStory() {
       </div>
     </>
   );
+
 }
 
 export default horrorStory;
