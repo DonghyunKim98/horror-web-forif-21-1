@@ -7,7 +7,6 @@ import ghostImage from "./images/Ghost.jpeg";
 
 function HorrorStory() {
   const [timeValue, setTimeValue] = useState(30);
-  const [click, setClick] = useState(0);
 
   useEffect(() => {
     if (timeValue === 0) return;
@@ -26,9 +25,9 @@ function HorrorStory() {
       <div className={styles.page}>
         <div className={styles.title}>Horror Story</div>
         <div className={styles.contents}>
-          <Story className={styles.story} setTimeValue={setTimeValue} setClick={setClick}></Story>
+          <Story className={styles.story}></Story>
           <Timer time={timeValue} />
-          {(!timeValue /*|| click===1*/) && (
+          {!timeValue && (
             <div className={styles.wrongAnswerContents}>
               <img src={ghostImage} />
               틀렸습니다!!!!!

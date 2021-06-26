@@ -50,10 +50,10 @@
 
 .title {
   text-align: center;
-  font-size: 4rem;
-  padding: 0.5rem;
-  color: #af2319;
-  font-family: 'title font';
+  font-size: 2rem;
+  padding: 1rem;
+  color: #df2a1d;
+  font-family: DancingScript;
 }
 .textPart {
   display: flex;
@@ -64,6 +64,7 @@
 .storyContent {
   border: solid #000000;
   color: #f5f3f3;
+  height: 26rem;
   width: 40rem;
 }
 
@@ -84,7 +85,7 @@ button {
   cursor: pointer;
   transition: 800ms ease all;
   outline: none;
-  margin-right: 2rem;
+  margin: 2rem;
   border-radius: 2rem;
 }
 .storyContent {
@@ -92,7 +93,7 @@ button {
   border-style: double;
   color: #ffffff;
   width: 40rem;
-  padding: 0.5rem;
+  padding: 1rem;
   font-family: "contents font";
   font-size: 1.3rem;
 }
