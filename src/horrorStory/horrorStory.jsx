@@ -25,7 +25,7 @@ function HorrorStory() {
       <div className={styles.page}>
         <div className={styles.title}>Horror Story</div>
         <div className={styles.contents}>
-          <Story className={styles.story}></Story>
+          <Story className={styles.story} setTimeValue={setTimeValue}></Story>
           <Timer time={timeValue} />
           {!timeValue && (
             <div className={styles.wrongAnswerContents}>
