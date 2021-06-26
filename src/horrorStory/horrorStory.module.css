@@ -1,40 +1,48 @@
 @font-face {
-  font-family: "DancingScript";
-  src: url("./font/DancingScript.eot");
+    font-family: "title font";
+    src: url("./static/font/Blood\ Thirst.ttf");
 }
 
-.page {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  z-index: 1;
-  width: 100%;
-  height: 100%;
-  background: url("./images/hand.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+@font-face {
+    font-family: "button font";
+    src: url("./static/font/DancingScript-Regular.ttf");
+}
+
+@font-face {
+    font-family: "contents font";
+    src: url("./static/font/cafe.ttf");
+}
+
+.page{
+    position: absolute;
+    z-index: 1;
+    width:100%;
+    height:100%;
+    background: url('./static/image/hand.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .page::after {
-  position: absolute;
-  z-index: -1;
-  background: url("./images/hand.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 100%;
-  content: "";
-  top: 0;
-  left: 0;
-  opacity: 0.5;
+    position: absolute;
+    z-index: -1;
+    background: url("./static/image/hand.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    content: "";
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+
 }
 
 .horrorStory {
   display: flex;
   flex-direction: column;
 }
+
 
 .title {
   text-align: center;
@@ -76,6 +84,40 @@ button {
   margin: 2rem;
   border-radius: 2rem;
 }
+.storyContent{
+    border: solid #000000 ;
+    border-style: double;
+    color:#ffffff;
+    width: 40rem;
+    padding: 1rem;
+    font-family: 'contents font';
+    font-size: 1.3rem;
+}
+
+.btnPart{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+button{
+    font-family: 'button font';
+    background:#e62c1f;
+    color:rgb(0, 0, 0);
+    border:none;
+    position:relative;
+    height:60px;
+    font-size:1.6em;
+    padding:0 2em;
+    cursor:pointer;
+    transition:800ms ease all;
+    outline:none;
+    margin: 2rem;
+    border-radius: 2rem;
+  }
+button:hover{
+    background:rgb(0, 0, 0);
+    color:#df2a1d;
 button:hover {
   background: rgb(0, 0, 0);
   color: #df2a1d;
