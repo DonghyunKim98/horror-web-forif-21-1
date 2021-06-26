@@ -2,7 +2,8 @@ import React from "react";
 import styles from "./horrorStory.module.css";
 import Story from "./Story.jsx";
 
-function horrorStory() {
+function HorrorStory() {
+  console.log("호러");
   return (
     <>
       <div className={styles.page}>
@@ -15,4 +16,4 @@ function horrorStory() {
   );
 }
 
-export default horrorStory;
+export default HorrorStory;
