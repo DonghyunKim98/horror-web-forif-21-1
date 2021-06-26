@@ -4,7 +4,12 @@ import HorrorSound from "./horrorSound/HorrorSound";
 import HorrorStory from "./horrorStory/HorrorStory";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./App.css";
+import Home from "./home/Home";
 
+
+const App=()=>{
+  return(
+    <Home/>
 function App() {
   return (
     <Router>
@@ -22,5 +27,6 @@ function App() {
     </Router>
   );
 }
+
 
 export default App;
