@@ -1,8 +1,8 @@
 import React from "react";
-import styles from "horrorStory.module.css";
+import styles from "./HorrorStory.module.css";
 
 function horrorStory() {
-  return <div></div>;
+  return <div>HorrorStory</div>;
 }
 
 export default horrorStory;
