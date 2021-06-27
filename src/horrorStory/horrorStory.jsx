@@ -30,7 +30,7 @@ function HorrorStory() {
           {!timeValue && (
             <div className={styles.wrongAnswerContents}>
               <img src={ghostImage} />
-              틀렸습니다!!!!!
+              틀렸잖아........
             </div>
           )}
         </div>
