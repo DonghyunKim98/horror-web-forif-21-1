@@ -1,70 +1,23 @@
-# Getting Started with Create React App
+### 한양대학교 프로그래밍 동아리 FORIF 21-1 학기 React 팀 해커톤 레포
+- 2021.06.26 에 하루동안 진행한 프로젝트입니다.
+- 테마는 **공포** 입니다.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### 사용한 기술
+- React
+  - `Module.css` 
+  - Hook 
+  - React Router
+  - `useSound`(https://github.com/joshwcomeau/use-sound) api
+- CSS3
 
-## Available Scripts
-
-In the project directory, you can run:
-
-### `yarn start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### 기능
+- `Home`
+<img width="1492" src="https://user-images.githubusercontent.com/60422588/125816856-f63fe28b-6efe-4125-89d7-eff55fca9f62.png">
+- `HorrorSound`
+<img width="3000" src="https://user-images.githubusercontent.com/60422588/125816878-5defce8b-9fc2-435e-a713-15b9c6d379c9.png">
+- 버튼을 눌렀을때, 해당 버튼에 적혀있는 물건과 관련된 소리가 출력
+- `HorrorStory`
+<img width="3000" src="https://user-images.githubusercontent.com/60422588/125816888-abfa9fa8-3a7c-4d48-9a8e-1fa9724618c2.png">
+- 23초 일때 13초로 갑자기 줄어드는 카운트 다운
+- 10초부터는 0.3 초마다 1초씩 줄어드는 카운트 다운
+- 카운트 다운이 0초이거나, ture/false 를 클릭할 경우 틀린 상태로 변경
